@@ -1,0 +1,368 @@
+.root {
+    -fx-background-color: #282828;
+    -fx-font-size: 11pt;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+}
+
+@font-face {
+    font-family: "SourceCodePro";
+    src: url("NovaMono-Regular.ttf");
+}
+
+.label {
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 9pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-smoothing-type: gray;
+}
+
+#dragrect {
+    -fx-fill: #3e3e3e;
+}
+
+#dragboxlabel {
+    -fx-text-fill: #c1c1c1;
+    -fx-font-size: 14pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+#choosefilebutton {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+
+    -fx-border-color: transparent;
+
+    -fx-text-fill: #98b659;
+    -fx-font-size: 14pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+#choosefilebutton:hover {
+    -fx-background-color: #777777;
+    -fx-background-insets: 12, 12;
+    -fx-background-radius: 4;
+
+    -fx-border-color: transparent;
+
+    -fx-text-fill: #98b659;
+    -fx-font-size: 14pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+#startbutton {
+    -fx-background-color: #87a448;
+    -fx-pref-height: 20;
+    -fx-background-insets: 3, 0;
+    -fx-background-radius: 4;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 12pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+#startbutton:hover {
+    -fx-background-color: #768655;
+    -fx-pref-height: 20;
+    -fx-background-insets: 3, 0;
+    -fx-background-radius: 4;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 12pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+#startbutton:disabled {
+    -fx-background-color: #87a448;
+    -fx-pref-height: 20;
+    -fx-background-insets: 3, 0;
+    -fx-background-radius: 4;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 12pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+#savefilebutton {
+    -fx-background-color: #6dcff6;
+    -fx-background-insets: 3, 0, 0, 0;
+    -fx-background-radius: 3;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 12pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+#savefilebutton:hover {
+    -fx-background-color: #51ace0;
+    -fx-background-insets: 3, 0, 0, 0;
+    -fx-background-radius: 3;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 12pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+#closebutton {
+    -fx-background-color: transparent;
+    -fx-background-insets: 15 ,15;
+    -fx-graphic: url("CloseButton.png");
+}
+#closebutton:hover {
+    -fx-background-color: transparent;
+    -fx-background-insets: 15 ,15;
+    -fx-background-size: 0;
+    -fx-graphic: url("CloseButtonHover.png");
+}
+
+.button {
+    -fx-background-color: #f5aa3a;
+    -fx-background-insets: 1, 0;
+    -fx-background-radius: 3;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 12pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+.button:hover {
+    -fx-background-color: #e78833;
+    -fx-background-insets: 1, 0;
+    -fx-background-radius: 4;
+
+    -fx-border-color: transparent;
+    -fx-border-radius: 0;
+
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 12pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-weight: bold;
+    -fx-font-smoothing-type: gray;
+}
+
+.text-field {
+    -fx-background-color: #e1e1e1;
+    -fx-background-radius: 4;
+
+    -fx-border-color: transparent;
+
+    -fx-text-fill: #111111;
+    -fx-prompt-text-fill: #aaaaaa;
+    -fx-font-size: 10pt;
+    -fx-font-family: "SourceCodePro" ;
+}
+
+.stage {
+    -fx-background-color: #262626;
+    -fx-text-fill: #e9e9e9;
+}
+
+.progress-bar .bar {
+    -fx-background-color: #847296;
+    -fx-background-insets: 0;
+    -fx-pref-height: 10;
+}
+
+.progress-bar > .track {
+    -fx-background-insets: 0;
+    -fx-text-box-border: transparent;
+    -fx-control-inner-background: #3e3e3e;
+}
+
+.table-view{
+    -fx-background-color: transparent;
+    -fx-border-color: #847296;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color:  transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #51ace0;
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 11pt;
+    -fx-font-family: "SourceCodePro" ;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 9pt;
+    -fx-font-family: "SourceCodePro" ;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #3e3e3e;
+    -fx-table-cell-border-color: gray;
+
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #282828;
+
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #51ace0;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:horizontal {
+    -fx-background-color: #282828;
+}
+
+.scroll-bar > .increment-button > .increment-arrow,
+.scroll-bar > .decrement-button > .decrement-arrow {
+    -fx-background-color: #87a448;
+    -fx-border-color: #87a448;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button,
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-background-color: #282828;
+}
+
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #e1e1e1;
+}
+
+.check-box {
+    /* default properties */
+    selected-box-color: transparent;
+    box-color: gray;
+    mark-color: #87a448;
+    -fx-text-fill: #e9e9e9;
+    -fx-font-size: 9pt;
+    -fx-font-family: "SourceCodePro" ;
+    -fx-font-smoothing-type: gray;
+
+}
+
+.check-box:selected > .box {
+    /* background color for selected checkbox */
+    -fx-background-color: selected-box-color;
+    -fx-border-color:gray;
+}
+
+.check-box > .box {
+    /* background color of unselected checkbox */
+    -fx-background-color: transparent;
+    -fx-border-color:gray;
+    -fx-padding: 1px;
+}
+
+.check-box:selected > .box > .mark,
+.check-box:indeterminate  > .box > .mark {
+    -fx-background-color: mark-color;
+}
+
+.choice-box .context-menu {
+    -fx-background-color: #e1e1e1;
+    -fx-background-radius: 4;
+    -fx-border-color: transparent;
+}
+.choice-box .menu-item:focused {
+    -fx-background-color: #51ace0;
+    -fx-background-radius: 4;
+}
+.choice-box .menu-item > .label { -fx-text-fill: #111111; }
+.choice-box .menu-item:focused > .label { -fx-text-fill: #111111; }
+
+.choice-box {
+    -fx-background-color:  #e1e1e1;
+    -fx-mark-color: #87a448;
+}
+
+.choice-box > .label {
+    -fx-text-fill: #111111;
+}
+
+.scroll-pane {
+    -fx-background-color: #282828;
+}
+
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #e1e1e1;
+}
+
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
